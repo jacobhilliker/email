@@ -1,0 +1,20 @@
+$component-pad: 28px;
+
+app-nav {
+    width: 100%;
+}
+
+app-message {
+    width: 100%;
+}
+
+#inbox {
+    background-color: white;
+    border-radius: 2px;
+    height: 100vh;
+    margin-top: 32px;
+    margin-left: 0;
+    padding: 8px;
+    padding-left: 32px;
+    width: 96%;
+}

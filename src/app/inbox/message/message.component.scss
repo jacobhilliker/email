@@ -1,0 +1,43 @@
+@import '../../colors.scss';
+// @import '../inbox.component.scss';
+
+// Padding of title from blue icon
+$title-pad: 12px;
+$title-size: 18pt;
+$icon-w: 16px;
+
+b {
+    padding-left: $title-pad;
+}
+
+i {
+    color: $button-blue;
+    line-height: $title-size;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+// Pads containers on the left side of the message to make space for blue icon
+.left {
+    padding-left: $icon-w + $title-pad - 2;
+}
+
+.row {
+    padding: 0;
+}
+
+#content {
+    color: gray;
+    margin-bottom: 8px;
+}
+
+#msg-container {
+    // height: 140px;
+}
+
+#time {
+    padding-right: 2.2%;
+    text-align: right;
+}

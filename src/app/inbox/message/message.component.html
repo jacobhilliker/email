@@ -1,0 +1,12 @@
+<div class="container-fluid" id="msg-container" (click)="markAsRead();highlight();" [style.background-color]="background">
+    <div class="row" id="meta">
+        <div class="col-6 left">{{ sender }}</div>
+        <div class="col-6" id="time">{{ timeReceived }}</div>
+    </div>
+    <div class="row">
+        <i [style.visibility]="dotVis" class="fa fa-circle"></i>
+        <b>{{ title }}</b></div>
+    <div class="row">
+        <div class="col left" id="content">{{ content }}</div>
+    </div>
+  </div>
