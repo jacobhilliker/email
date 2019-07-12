@@ -22,10 +22,6 @@ export class MessageComponent implements OnInit {
 
   ngOnInit() {}
 
-  highlight(): void {
-    this.background = '#aaeeff';
-  }
-
   markAsRead(): void {
     this.dotVis = 'hidden';
   }

@@ -1,62 +1,73 @@
 @import "../colors.scss";
 
 $btn-height: 32px;
+$breakpoint-tablet: 768px;
+$nav-pad: 36px;
 $option-size: 18pt;
 
 p {
     padding-left: 1%;
 }
 
-.container-fluid {
+#side-container {
     background-color: lightgray;
-    // border: 1px solid gray;
     border-bottom: none;
     border-top: none;
-    height: 100vh;
-    min-width: 160px;
-    padding-top: 36px;
-}
-
-.col {
-    display: flex;
-    justify-content: center;
+    // Height takes up full screen on tablets and larger devices
+    @media (min-width: $breakpoint-tablet) {
+        height: 100vh;
+        padding-bottom: 0;
+    }
+    min-width: 180px;
+    padding-bottom: $nav-pad;
+    padding-top: $nav-pad;
+    padding-right: 0;
 }
 
 .fa {
     color: $button-blue;
     height: $option-size;
-    width: $option-size;
+    // width: $option-size;
     padding-top: 8px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
 }
 
 .options {
     font-size: $option-size;
     justify-content: left;
-    padding-left: 30%;
+    width: 110px;
 }
 
 #address {
     font-style: italic;
 }
 
-#button {
+#compose {
     background-color: $button-blue;
     border: none;
     border-radius: $btn-height;
-    color: white;
-    line-height: $btn-height;
     margin-top: 16px;
     margin-bottom: 16px;
     min-width: 100px;
-    text-align: center;
     height: $btn-height;
-    width: 50%;
 }
 
 #img-spot {
     height: 84px;
     margin-bottom: 8px;
     padding: 0;
+}
+
+#opt-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+    width: 50%;
 }
 
 #u-icon {
@@ -78,4 +89,6 @@ p {
     flex-direction: column;
     justify-content: top;
     align-items: center;
+    margin: 0;
+    width: 100%;
 }

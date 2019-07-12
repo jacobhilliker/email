@@ -1,13 +1,18 @@
-<div class="container-fluid">
+<div class="container-fluid" id="side-container">
     <div class="row" id="user">
-        <div class="col" id="img-spot"><img src="../../assets/c9.png" id="u-icon"></div>
-        <div class="col">Jacob Hilliker</div>
-        <div class="col" id="address">jhillike@asu.edu</div>
-        <div class="col"><div id="button">compose</div></div>
-        <div class="col options"><i class="fa fa-caret-down"></i><p>Inbox</p></div>
-        <div class="col options"><i class="fa fa-caret-right"></i><p>Drafts</p></div>
-        <div class="col options"><i class="fa fa-caret-right"></i><p>Sent</p></div>
-        <div class="col options"><i class="fa fa-warning"></i><p>Spam</p></div>
-        <div class="col options"><i class="fa fa-trash"></i><p>Trash</p></div>
+        <div class="col info" id="img-spot"><img src="../../assets/c9.png" id="u-icon"></div>
+        <div class="col info">Jacob Hilliker</div>
+        <div class="col info" id="address">jhillike@asu.edu</div>
+        <div class="col info"><button class="btn btn-primary" id="compose">compose</button></div>
+
+        <!--Options-->
+        <div class="col" id="opt-wrapper">
+            <div class="row options"><i class="fa fa-caret-down fa-fw"></i><p>Inbox</p></div>
+            <div class="row options"><i class="fa fa-caret-right fa-fw"></i><p>Drafts</p></div>
+            <div class="row options"><i class="fa fa-caret-right fa-fw"></i><p>Sent</p></div>
+            <div class="row options"><i class="fa fa-warning fa-fw"></i><p>Spam</p></div>
+            <div class="row options"><i class="fa fa-trash fa-fw"></i><p>Trash</p></div>
+        </div>
+        
     </div>
 </div>

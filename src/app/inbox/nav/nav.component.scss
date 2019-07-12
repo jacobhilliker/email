@@ -10,6 +10,7 @@ input {
     background-color: $input;
     border: 1px solid $input;
     border-radius: 4px;
+    margin-left: 26px;
     padding-left: $component-pad;
     position: absolute;
     width: 85%;
@@ -20,7 +21,7 @@ input {
 }
 
 .fa-search {
-    margin-left: 6px;
+    margin-left: 32px;
     margin-top: 6px;
     position: relative;
     z-index: 2;
