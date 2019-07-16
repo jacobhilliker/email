@@ -1,9 +1,23 @@
 <div class="container-fluid" id="side-container">
     <div class="row" id="user">
-        <div class="col info" id="img-spot"><img src="../../assets/c9.png" id="u-icon"></div>
+        <div class="col info" id="img-spot">
+            <div id="acct-anchor">
+                <img src="../../assets/c9.png" id="u-icon" (click)="toggleAccountVis();">
+                <!--Account Options-->
+                <div class="col info" id="account" [style.visibility]="accountVis">
+                     <div class="col info">
+                        <p style="padding: 0">Account Options</p>
+                    </div>
+                    <div class="col info">
+                        <a routerLink="/login"><button class="btn btn-secondary" id="btn-login">Log Out</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="col info">Jacob Hilliker</div>
         <div class="col info" id="address">jhillike@asu.edu</div>
-        <div class="col info"><button class="btn btn-primary" id="compose">compose</button></div>
+        <div class="col info"><a routerLink="/compose"><button class="btn btn-primary" id="compose">compose</button></a></div>
 
         <!--Options-->
         <div class="col" id="opt-wrapper">

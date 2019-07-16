@@ -1,0 +1,26 @@
+<h2>Sign Up</h2>
+<div class="container">
+  <div class="col-12 justify-content-center">
+    <form [formGroup]="signupForm" (ngSubmit)="submitSignup();">
+
+      <label for="signupEmail">Email</label>
+      <input type="text" class="form-control" formControlName="signupEmail">
+
+      <label for="signupPassword">Password</label>
+      <input type="password" class="form-control" formControlName="signupPassword">
+
+      <label for="signupRePassword">Re-Enter Password</label>
+      <input type="password" class="form-control" formControlName="signupRePassword">
+
+      <label for="signupName">Name</label>
+      <input type="text" class="form-control" formControlName="signupName">
+
+      <a routerLink="/"><button class="btn btn-primary" type="submit" [disabled]="!signupForm.valid">Submit</button></a>
+
+    </form>
+  </div>
+</div>
+
+<div id="login">
+  <a routerLink="../login">Already have an account? Log in!</a>
+</div>

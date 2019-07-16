@@ -1,0 +1,140 @@
+$head-pad: 6px;
+$magic-space: 12px;
+$min-container: 360px;
+$msg-space: 4px;
+$msg-offset: 2%;
+
+button {
+    margin-top: $magic-space;
+}
+
+h2 {
+    margin: $magic-space;
+    text-align: center;
+}
+
+i {
+    color: #aaaaaa;
+    line-height: 16px; // same as button
+    margin: $magic-space / 2;
+}
+
+input {
+    outline: none;
+}
+
+label {
+    margin-top: $magic-space;
+}
+
+.container {
+    min-width: 360px;
+    width: 50%;
+    border: solid 1px #aaaaaa;
+    border-radius: 10px;
+    margin-top: $magic-space;
+    padding-bottom: $magic-space;
+}
+
+.foot-item {
+    margin-right: $magic-space;
+}
+
+.head-item {
+    color: white;
+}
+
+.i-btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    margin: 6px;
+    outline: none;
+    padding: 0;
+}
+
+.i-btn:hover {
+    &.head-btn {
+        background-color: #888888;
+        transition: 0.2s;
+    }
+
+    &.foot-item {
+        background-color: #eeeeee;
+        transition: 0.2s;
+    }
+}
+
+.msg-input {
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    width: 100%;
+}
+
+.ng-invalid {
+    &.ng-touched {
+        &.form-control {
+            border-color: red; 
+        }  
+    }
+}
+
+.row {
+    justify-content: center;
+    margin: 0;
+    margin-left: $msg-offset;
+    margin-right: $msg-offset;
+}
+
+#btn-send {
+    margin-top: 0;
+}
+
+#footer {
+    // background-color: #888888;
+    justify-content: left;
+    margin: 0;
+    padding: $magic-space;
+    text-align: center;
+    width: 100%;
+}
+
+#header {
+    background-color: #444444;
+    color: white;
+    justify-content: left;
+    margin: 0;
+    padding-left: $msg-offset;
+    padding-top: $head-pad;
+    padding-bottom: $head-pad;
+    width: 100%;
+}
+
+#msg-body {
+    border: none;
+    outline: none;
+    height: 200px;
+    resize: none;
+}
+
+#msg-col {
+    padding: 0;
+}
+
+#msg-container {
+    border-radius: 0;
+    margin-bottom: $magic-space;
+    padding: 0;
+}
+
+#new-msg {
+    line-height: 40px;
+    min-width: 120px;
+    padding-left: 0;
+    vertical-align: center;
+}
+
+#window-icons {
+    max-width: 152px;
+    text-align: right;
+}

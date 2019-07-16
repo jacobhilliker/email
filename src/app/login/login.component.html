@@ -1,0 +1,23 @@
+<h2>Log In</h2>
+
+<!--Login form-->
+<div class="container">
+  <div class="col-12 justify-content-center">
+    <form [formGroup]="loginForm" (ngSubmit)="submitLogin();">
+
+      <label for="email">Email</label>
+      <input type="text" class="form-control" formControlName="loginEmail">
+
+      <label for="password">Password</label>
+      <input type="password" class="form-control" formControlName="loginPassword">
+
+      <a routerLink="/"><button class="btn btn-primary" type="submit" [disabled]="!loginForm.valid">Submit</button></a>
+
+    </form>
+  </div>
+</div>
+
+<!--Redirects to signup page-->
+<div id="signup">
+    <a routerLink="../signup">Don't have an account yet? Sign up!</a>
+</div>

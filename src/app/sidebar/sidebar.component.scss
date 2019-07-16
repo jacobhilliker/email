@@ -2,6 +2,7 @@
 
 $btn-height: 32px;
 $breakpoint-tablet: 768px;
+$img-height: 84px;
 $nav-pad: 36px;
 $option-size: 18pt;
 
@@ -36,14 +37,50 @@ p {
     justify-content: center;
 }
 
+.justify-content-right {
+    text-align: right;
+}
+
 .options {
     font-size: $option-size;
     justify-content: left;
     width: 110px;
 }
 
+#account {
+    background-color: #fff;
+    border: solid 1px #aaa;
+    border-radius: 2px;
+    box-shadow: 2px 4px #888;
+    flex-direction: column;
+    width: 200px;
+    min-width: 200px;
+    padding: 12px;
+    position: absolute;
+    left: $img-height + 8px;
+    top: -16px;
+    z-index: 3;
+}
+
+#acct-anchor {
+    position: relative;
+}
+
 #address {
     font-style: italic;
+}
+
+#btn-img {
+    background: none;
+    border: none;
+}
+
+#btn-login {
+    min-width: 70px;
+}
+
+#btn-signup {
+    min-width: 80px;
 }
 
 #compose {
@@ -57,7 +94,7 @@ p {
 }
 
 #img-spot {
-    height: 84px;
+    height: $img-height;
     margin-bottom: 8px;
     padding: 0;
 }

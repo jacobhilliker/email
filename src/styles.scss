@@ -7,6 +7,11 @@
     }
 }
 
+@mixin form-link() {
+    text-align: center;
+    margin-top: $magic-space;
+}
+
 body {
     background-color: lightgray;
 }
