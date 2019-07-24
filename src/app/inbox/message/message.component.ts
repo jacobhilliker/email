@@ -10,8 +10,8 @@ export class MessageComponent implements OnInit {
 
   @Input() sender: String;
   @Input() timeReceived: String;
-  @Input() title: String;
-  @Input() content: String;
+  @Input() subject: String;
+  @Input() body: String;
 
   background: string;
 

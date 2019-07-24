@@ -3,15 +3,15 @@
 <!--Login form-->
 <div class="container">
   <div class="col-12 justify-content-center">
-    <form [formGroup]="loginForm" (ngSubmit)="submitLogin();">
+    <form [formGroup]="loginForm">
 
       <label for="email">Email</label>
       <input type="text" class="form-control" formControlName="loginEmail">
 
-      <label for="password">Password</label>
+      <label for="loginPassword">Password</label>
       <input type="password" class="form-control" formControlName="loginPassword">
 
-      <a routerLink="/"><button class="btn btn-primary" type="submit" [disabled]="!loginForm.valid">Submit</button></a>
+      <a routerLink="/"><button class="btn btn-primary" type="submit" [disabled]="!loginForm.valid" (click)="handleLoginClick()">Submit</button></a>
 
     </form>
   </div>

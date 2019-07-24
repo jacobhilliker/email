@@ -9,7 +9,7 @@
                         <p style="padding: 0">Account Options</p>
                     </div>
                     <div class="col info">
-                        <a routerLink="/login"><button class="btn btn-secondary" id="btn-login">Log Out</button></a>
+                        <a routerLink="/login"><button class="btn btn-secondary" id="btn-login" (click)="logout()">Log Out</button></a>
                     </div>
                 </div>
             </div>
@@ -21,9 +21,9 @@
 
         <!--Options-->
         <div class="col" id="opt-wrapper">
-            <div class="row options"><i class="fa fa-caret-down fa-fw"></i><p>Inbox</p></div>
+            <div class="row options clickable" routerLink="/"><i class="fa fa-caret-down fa-fw"></i><p>Inbox</p></div>
             <div class="row options"><i class="fa fa-caret-right fa-fw"></i><p>Drafts</p></div>
-            <div class="row options"><i class="fa fa-caret-right fa-fw"></i><p>Sent</p></div>
+            <div class="row options clickable" routerLink="sent"><i class="fa fa-caret-right fa-fw"></i><p>Sent</p></div>
             <div class="row options"><i class="fa fa-warning fa-fw"></i><p>Spam</p></div>
             <div class="row options"><i class="fa fa-trash fa-fw"></i><p>Trash</p></div>
         </div>

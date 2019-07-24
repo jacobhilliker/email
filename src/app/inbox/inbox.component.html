@@ -1,10 +1,7 @@
-<div class="container-fluid" id="inbox">
-    <div class="row"><app-nav></app-nav></div>
-    <ng-container class="row">
-        <app-message *ngFor="let msg of messages"
-        [sender]="msg.sender"
-        [timeReceived]="msg.timeReceived"
-        [title]="msg.title"
-        [content]="msg.content"></app-message>
-    </ng-container>
-</div>
+<ng-container class="row">
+    <app-message *ngFor="let msg of messages"
+    [sender]="msg.sender"
+    [timeReceived]="msg.timeReceived"
+    [subject]="msg.subject"
+    [body]="msg.body"></app-message>
+</ng-container>
