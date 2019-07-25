@@ -22,10 +22,11 @@ p {
         width: 100%;
     }
     min-width: 180px;
+    margin-top: 0;
+    overflow-x: auto;
     padding-bottom: $nav-pad;
     padding-top: $nav-pad;
     padding-right: 0;
-    width: 100vw;
 }
 
 .fa {
