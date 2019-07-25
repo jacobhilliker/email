@@ -15,6 +15,9 @@ import { NavComponent } from './inbox/nav/nav.component';
 import { InboxComponent } from './inbox/inbox.component';
 import { SentComponent } from './sent/sent.component';
 import { MessageComponent } from './inbox/message/message.component';
+import { DraftsComponent } from './drafts/drafts.component';
+import { SpamComponent } from './spam/spam.component';
+import { TrashComponent } from './trash/trash.component';
 
 const routes: Routes = [
   {
@@ -25,13 +28,31 @@ const routes: Routes = [
       title: 'jmail | Home'
     },
     canActivate: [AuthGuardService],
-    children: [{ path: '', component: InboxComponent, pathMatch: 'full' }]
+    children: [{ path: '', component: InboxComponent }]
   },
   {
     path: 'sent', // Not sure if there's a better solution
     component: HomeComponent,
     canActivate: [AuthGuardService],
     children: [{ path: '', component: SentComponent, pathMatch: 'full' }]
+  },
+  {
+    path: 'drafts',
+    component: HomeComponent,
+    canActivate: [AuthGuardService],
+    children: [{ path: '', component: DraftsComponent, pathMatch: 'full'}]
+  },
+  {
+    path: 'spam',
+    component: HomeComponent,
+    canActivate: [AuthGuardService],
+    children: [{ path: '', component: SpamComponent, pathMatch: 'full'}]
+  },
+  {
+    path: 'trash',
+    component: HomeComponent,
+    canActivate: [AuthGuardService],
+    children: [{ path: '', component: TrashComponent}]
   },
   {
     path: 'login',
@@ -55,7 +76,10 @@ const routes: Routes = [
     NavComponent,
     InboxComponent,
     SentComponent,
-    MessageComponent
+    MessageComponent,
+    DraftsComponent,
+    SpamComponent,
+    TrashComponent
   ],
   imports: [
     BrowserModule,

@@ -28,10 +28,6 @@ p {
     width: 100vw;
 }
 
-.clickable {
-    cursor: pointer;
-}
-
 .fa {
     color: $button-blue;
     height: $option-size;
@@ -49,6 +45,7 @@ p {
 }
 
 .options {
+    cursor: pointer;
     font-size: $option-size;
     justify-content: left;
     margin-bottom: 16px;
